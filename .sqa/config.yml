@@ -1,0 +1,72 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: fix/updatego
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/n8n-io/n8n:
+      branch: master
+      repo: https://github.com/n8n-io/n8n
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/n8n-io/n8n git:
+        commands:
+        - /usr/bin/env sh .sqa/script.mango_timid_elephant.sh
+        container: qc.acc_linen_observant_unicorn
+  QC.Doc:
+    repos:
+      github.com/n8n-io/n8n find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.navy_exuberant_penguin.sh
+        container: qc.doc_walnut_confused_barracuda
+      github.com/n8n-io/n8n git:
+        commands:
+        - /usr/bin/env sh .sqa/script.purple_practical_penguin.sh
+        container: qc.doc_royal_careful_roc
+      github.com/n8n-io/n8n markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.lavender_tactful_impala.sh
+        container: qc.doc_green_graceful_beaver
+  QC.Lic:
+    repos:
+      github.com/n8n-io/n8n licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.mulberry_smart_porpoise.sh
+        container: qc.lic_carmine_innocent_rhinoceros
+  QC.Sec:
+    repos:
+      github.com/n8n-io/n8n bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.fuchsia_humorous_grizzly.sh
+        container: qc.sec_avocado_anxious_komodo
+  QC.Sty:
+    repos:
+      github.com/n8n-io/n8n flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.tangerine_zany_snail.sh
+        container: qc.sty_mint_cheerful_turkey
+      github.com/n8n-io/n8n hadolint:
+        commands:
+        - /usr/bin/env sh .sqa/script.chestnut_balanced_otter.sh
+        container: qc.sty_marigold_tenacious_anaconda
+      github.com/n8n-io/n8n jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.vermilion_witty_horse.sh
+        container: qc.sty_maroon_compassionate_griffin
+  QC.Uni:
+    repos:
+      github.com/n8n-io/n8n pytest:
+        commands:
+        - /usr/bin/env sh .sqa/script.mauve_patient_osprey.sh
+        container: qc.uni_poppy_nurturing_hawk
+  QC.Ver:
+    repos:
+      github.com/n8n-io/n8n get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.gamboge_sympathetic_armadillo.sh
+        container: qc.ver_flax_joyful_albatross
+timeout: 5400
