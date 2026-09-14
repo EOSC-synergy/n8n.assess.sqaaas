@@ -15,58 +15,58 @@ sqa_criteria:
     repos:
       github.com/n8n-io/n8n git:
         commands:
-        - /usr/bin/env sh .sqa/script.mango_timid_elephant.sh
-        container: qc.acc_linen_observant_unicorn
+        - /usr/bin/env sh .sqa/script.gamboge_apathetic_tortoise.sh
+        container: qc.acc_cornflower_mischievous_dormouse
   QC.Doc:
     repos:
       github.com/n8n-io/n8n find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.navy_exuberant_penguin.sh
-        container: qc.doc_walnut_confused_barracuda
+        - /usr/bin/env sh .sqa/script.plum_ardent_gecko.sh
+        container: qc.doc_aquamarine_grumpy_hare
       github.com/n8n-io/n8n git:
         commands:
-        - /usr/bin/env sh .sqa/script.purple_practical_penguin.sh
-        container: qc.doc_royal_careful_roc
+        - /usr/bin/env sh .sqa/script.cinnamon_impulsive_albatross.sh
+        container: qc.doc_pansy_whimsical_ibex
       github.com/n8n-io/n8n markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.lavender_tactful_impala.sh
-        container: qc.doc_green_graceful_beaver
+        - /usr/bin/env sh .sqa/script.tundra_agile_elk.sh
+        container: qc.doc_cinnabar_positive_dragonfly
   QC.Lic:
     repos:
       github.com/n8n-io/n8n licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.mulberry_smart_porpoise.sh
-        container: qc.lic_carmine_innocent_rhinoceros
+        - /usr/bin/env sh .sqa/script.heather_apathetic_peacock.sh
+        container: qc.lic_porcelain_honest_moth
   QC.Sec:
     repos:
       github.com/n8n-io/n8n bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.fuchsia_humorous_grizzly.sh
-        container: qc.sec_avocado_anxious_komodo
+        - /usr/bin/env sh .sqa/script.khaki_goofy_lemur.sh
+        container: qc.sec_linen_adaptable_uakari
   QC.Sty:
     repos:
       github.com/n8n-io/n8n flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.tangerine_zany_snail.sh
-        container: qc.sty_mint_cheerful_turkey
+        - /usr/bin/env sh .sqa/script.powder_artistic_impala.sh
+        container: qc.sty_bronze_flexible_manta
       github.com/n8n-io/n8n hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.chestnut_balanced_otter.sh
-        container: qc.sty_marigold_tenacious_anaconda
+        - /usr/bin/env sh .sqa/script.lapis_audacious_coyote.sh
+        container: qc.sty_periwinkle_nurturing_manatee
       github.com/n8n-io/n8n jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.vermilion_witty_horse.sh
-        container: qc.sty_maroon_compassionate_griffin
+        - /usr/bin/env sh .sqa/script.rust_sincere_gazelle.sh
+        container: qc.sty_walnut_trustworthy_wolf
   QC.Uni:
     repos:
       github.com/n8n-io/n8n pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.mauve_patient_osprey.sh
-        container: qc.uni_poppy_nurturing_hawk
+        - /usr/bin/env sh .sqa/script.mist_wise_eel.sh
+        container: qc.uni_flamingo_impulsive_grasshopper
   QC.Ver:
     repos:
       github.com/n8n-io/n8n get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.gamboge_sympathetic_armadillo.sh
-        container: qc.ver_flax_joyful_albatross
+        - /usr/bin/env sh .sqa/script.lapis_savvy_camel.sh
+        container: qc.ver_tide_cranky_albatross
 timeout: 5400
